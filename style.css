@@ -3,39 +3,58 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #e0e0e0;
 }
 
 .calculator {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+                 -20px -20px 60px #ffffff;
 }
 
 .display {
-    padding: 10px;
-    background-color: #fff;
+    padding: 20px;
+    background-color: #e0e0e0;
 }
 
 #result {
     width: 100%;
     border: none;
     text-align: right;
-    font-size: 2em;
+    font-size: 2.5em;
+    background: #e0e0e0;
+    box-shadow: inset 5px 5px 10px #bebebe,
+                inset -5px -5px 10px #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    color: #333;
 }
 
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
 }
 
 button {
-    border: 1px solid #ccc;
+    border: none;
+    border-radius: 15px;
     padding: 20px;
     font-size: 1.5em;
     cursor: pointer;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  5px 5px 10px #bebebe,
+                 -5px -5px 10px #ffffff;
+    transition: all 0.1s ease-in-out;
 }
 
 button:hover {
-    background-color: #ddd;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+}
+
+button:active {
+    box-shadow: inset 5px 5px 10px #bebebe,
+                inset -5px -5px 10px #ffffff;
 }
